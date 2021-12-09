@@ -6,76 +6,58 @@ The diagram shows flow of how we implement User Registration, User Login and Aut
 ![jwt-token-authentication-node-js-example-flow](jwt-token-authentication-node-js-example-flow.png)
 
 For more detail, please visit:
-> [Node.js + MongoDB: User Authentication & Authorization with JWT](https://bezkoder.com/node-js-mongodb-auth-jwt/)
+> [Node.js + MongoDB: User Authentication & Authorization with JWT](https://www.bezkoder.com/node-js-mongodb-auth-jwt/)
 
 You may need to implement Refresh Token:
 
 ![jwt-refresh-token-node-js-example-flow](jwt-refresh-token-node-js-example-flow.png)
 
-> [Node.js JWT Refresh Token with MongoDB example](https://bezkoder.com/jwt-refresh-token-node-js-mongodb/)
+> [Node.js JWT Refresh Token with MongoDB example](https://www.bezkoder.com/jwt-refresh-token-node-js-mongodb/)
 
 Working with Front-end:
-> [Vue.js JWT Authentication with Vuex and Vue Router](https://bezkoder.com/jwt-vue-vuex-authentication/)
+> [Vue](https://www.bezkoder.com/jwt-vue-vuex-authentication/)
 
-> [Angular 8 JWT Authentication example](https://bezkoder.com/angular-jwt-authentication/)
+> [Angular 8](https://www.bezkoder.com/angular-jwt-authentication/) / [Angular 10](https://www.bezkoder.com/angular-10-jwt-auth/) / [Angular 11](https://www.bezkoder.com/angular-11-jwt-auth/) / [Angular 12](https://www.bezkoder.com/angular-12-jwt-auth/) / [Angular 13](https://www.bezkoder.com/angular-13-jwt-auth/)
 
-> [Angular 10 JWT Authentication example](https://bezkoder.com/angular-10-jwt-auth/)
-
-> [Angular 11 JWT Authentication example](https://bezkoder.com/angular-11-jwt-auth/)
-
-> [React JWT Authentication & Authorization (without Redux) example](https://bezkoder.com/react-jwt-auth/)
-
-> [React Redux JWT Authentication & Authorization example](https://bezkoder.com/react-redux-jwt-auth/)
+> [React](https://www.bezkoder.com/react-jwt-auth/) / [React + Redux](https://www.bezkoder.com/react-redux-jwt-auth/)
 
 ## More Practice:
-> [Node.js, Express & MongoDb: Build a CRUD Rest Api example](https://bezkoder.com/node-express-mongodb-crud-rest-api/)
+> [Node.js, Express & MongoDb: Build a CRUD Rest Api example](https://www.bezkoder.com/node-express-mongodb-crud-rest-api/)
 
-> [Server side Pagination in Node.js with MongoDB and Mongoose](https://bezkoder.com/node-js-mongodb-pagination/)
+> [Server side Pagination in Node.js with MongoDB and Mongoose](https://www.bezkoder.com/node-js-mongodb-pagination/)
+
+> [Node.js Express File Upload Rest API example](https://www.bezkoder.com/node-js-express-file-upload/)
 
 Associations:
-> [MongoDB One-to-One relationship tutorial with Mongoose examples](https://bezkoder.com/mongoose-one-to-one-relationship-example/)
+> [MongoDB One-to-One relationship tutorial with Mongoose examples](https://www.bezkoder.com/mongoose-one-to-one-relationship-example/)
 
-> [MongoDB One-to-Many Relationship tutorial with Mongoose examples](https://bezkoder.com/mongoose-one-to-many-relationship/)
+> [MongoDB One-to-Many Relationship tutorial with Mongoose examples](https://www.bezkoder.com/mongoose-one-to-many-relationship/)
 
-> [MongoDB Many-to-Many Relationship with Mongoose examples](https://bezkoder.com/mongodb-many-to-many-mongoose/)
+> [MongoDB Many-to-Many Relationship with Mongoose examples](https://www.bezkoder.com/mongodb-many-to-many-mongoose/)
 
 Fullstack:
-> [Vue.js + Node.js + Express + MySQL example](https://bezkoder.com/vue-js-node-js-express-mysql-crud-example/)
+> [Vue.js + Node.js + Express + MongoDB example](https://www.bezkoder.com/vue-node-express-mongodb-mevn-crud/)
 
-> [Vue.js + Node.js + Express + PostgreSQL example](https://bezkoder.com/vue-node-express-postgresql/)
+> [Angular 8 + Node.js + Express + MongoDB example](https://www.bezkoder.com/angular-mongodb-node-express/)
 
-> [Vue.js + Node.js + Express + MongoDB example](https://bezkoder.com/vue-node-express-mongodb-mevn-crud/)
+> [Angular 10 + Node.js + Express + MongoDB example](https://www.bezkoder.com/angular-10-mongodb-node-express/)
 
-> [Angular 8 + Node.js + Express + MySQL example](https://bezkoder.com/angular-node-express-mysql/)
+> [Angular 11 + Node.js + Express + MongoDB example](https://www.bezkoder.com/angular-11-mongodb-node-js-express/)
 
-> [Angular 8 + Node.js + Express + PostgreSQL example](https://bezkoder.com/angular-node-express-postgresql/)
+> [Angular 12 + Node.js + Express + MongoDB example](https://www.bezkoder.com/angular-12-mongodb-node-js-express/)
 
-> [Angular 8 + Node.js + Express + MongoDB example](https://bezkoder.com/angular-mongodb-node-express/)
+> [Angular 13 + Node.js + Express + MongoDB example](https://www.bezkoder.com/mean-stack-crud-example-angular-13/)
 
-> [Angular 10 + Node.js + Express + MySQL example](https://bezkoder.com/angular-10-node-js-express-mysql/)
-
-> [Angular 10 + Node.js + Express + PostgreSQL example](https://bezkoder.com/angular-10-node-express-postgresql/)
-
-> [Angular 10 + Node.js + Express + MongoDB example](https://bezkoder.com/angular-10-mongodb-node-express/)
-
-> [Angular 11 + Node.js Express + MySQL example](https://bezkoder.com/angular-11-node-js-express-mysql/)
-
-> [Angular 11 + Node.js + Express + PostgreSQL example](https://bezkoder.com/angular-11-node-js-express-postgresql/)
-
-> [Angular 11 + Node.js + Express + MongoDB example](https://bezkoder.com/angular-11-mongodb-node-js-express/)
-
-> [React + Node.js + Express + MySQL example](https://bezkoder.com/react-node-express-mysql/)
-
-> [React + Node.js + Express + PostgreSQL example](https://bezkoder.com/react-node-express-postgresql/)
-
-> [React + Node.js + Express + MongoDB example](https://bezkoder.com/react-node-express-mongodb-mern-stack/)
+> [React + Node.js + Express + MongoDB example](https://www.bezkoder.com/react-node-express-mongodb-mern-stack/)
 
 Integration on same Server/Port:
-> [Integrate Angular 8 with Node.js Express](https://bezkoder.com/integrate-angular-8-node-js/)
+> [Integrate Angular 8 with Node.js Express](https://www.bezkoder.com/integrate-angular-8-node-js/)
 
-> [Integrate Angular 10 with Node.js Express](https://bezkoder.com/integrate-angular-10-node-js/)
+> [Integrate Angular 10 with Node.js Express](https://www.bezkoder.com/integrate-angular-10-node-js/)
 
-> [Integrate React with Node.js Express](https://bezkoder.com/integrate-react-express-same-server-port/)
+> [Integrate Angular 12 with Node.js Express](https://www.bezkoder.com/integrate-angular-12-node-js/)
+
+> [Integrate React with Node.js Express](https://www.bezkoder.com/integrate-react-express-same-server-port/)
 
 ## Project setup
 ```
