@@ -19,7 +19,7 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
 
     // Email
     User.findOne({
-      email: req.body.email
+      address: req.body.address
     }).exec((err, user) => {
       if (err) {
         res.status(500).send({ message: err });

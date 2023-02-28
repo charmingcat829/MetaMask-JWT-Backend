@@ -1,11 +1,12 @@
 const mongoose = require("mongoose");
 
-const User = mongoose.model(
-  "User",
+const Payment = mongoose.model(
+  "Payment",
   new mongoose.Schema({
-    username: String,
     address: String,
-    password: String,
+    amount: Number,
+    created_at: Date,
+    payment_method: String,
     roles: [
       {
         type: mongoose.Schema.Types.ObjectId,
@@ -15,4 +16,4 @@ const User = mongoose.model(
   })
 );
 
-module.exports = User;
+module.exports = Payment;

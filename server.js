@@ -1,3 +1,4 @@
+const morgan = require('morgan')
 const express = require("express");
 const cors = require("cors");
 const dbConfig = require("./app/config/db.config");
@@ -5,11 +6,14 @@ const dbConfig = require("./app/config/db.config");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  //origin: "http://localhost:8081"
+  origin:'http://localhost:3000', 
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200
 };
 
 app.use(cors(corsOptions));
-
+app.use(morgan('tiny'))
 // parse requests of content-type - application/json
 app.use(express.json());
 
@@ -18,9 +22,11 @@ app.use(express.urlencoded({ extended: true }));
 
 const db = require("./app/models");
 const Role = db.role;
-
+const uri = "mongodb+srv://Charles:ks200282923@cluster0.agonaw5.mongodb.net/?retryWrites=true&w=majority";
+// `mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`
+//const uri = `mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`;
 db.mongoose
-  .connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
+  .connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
@@ -41,7 +47,7 @@ app.get("/", (req, res) => {
 // routes
 require("./app/routes/auth.routes")(app);
 require("./app/routes/user.routes")(app);
-
+require("./app/routes/payment.routes")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
