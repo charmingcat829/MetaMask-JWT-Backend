@@ -6,13 +6,7 @@ const Payment = mongoose.model(
     address: String,
     amount: Number,
     created_at: Date,
-    payment_method: String,
-    roles: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Role"
-      }
-    ]
+    payment_method: String
   })
 );
 
