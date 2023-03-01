@@ -25,26 +25,24 @@ exports.createPayment = async (req, res) => {
   });
 }
 
-exports.getPaymentByAddress = (req, res) => {
+exports.getPaymentByAddress = async (req, res) => {
   let address = req.params.address;
   address = address.toLowerCase();
-  Payment.aggregate([
-    {
-      $match: { address: address }
-    },
-    {
-      $group: { _id: '', total_amount: { $sum: "$amount" } }
-    } 
-  ]).exec((err, payment) => {
-    if (err) {
-      res.status(500).send({ message: err });
+  try {
+    let user = await User.findOne( { address: address}).exec();
+    if (!user) {
+      res.status(404).send({message: "NO Exist User"});
       return;
     }
-    //payment[0].address = address;
-    res.status(200).send({
-      payment
-    });
-  }); 
+    let total_amount = await Payment.aggregate([
+      {$match: { address: user.address }}, 
+      {$group: { _id: '', total_amount: { $sum: "$amount" } }}
+    ]).exec();
+    res.status(200).send({ address : user.address, total_amount: total_amount[0].total_amount});
+  } catch(err) {
+    res.status(500).send({message : err});
+    return;
+  } 
 };
 
 

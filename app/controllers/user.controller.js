@@ -6,7 +6,7 @@ exports.getUsers = (req, res) => {
   User.find()
     .exec((err, user) => {
       if (err) {
-        res.status(500).send({ message: err });
+        res.status(404).send({ message: "No Exist User!" });
         return;
       }
       res.status(200).send({
